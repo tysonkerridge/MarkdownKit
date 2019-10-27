@@ -17,7 +17,7 @@ public protocol MarkdownCommonElement: MarkdownElement, MarkdownStyle {
 public extension MarkdownCommonElement {
   
   func regularExpression() throws -> NSRegularExpression {
-    return try NSRegularExpression(pattern: regex, options: [])
+    return try NSRegularExpression(pattern: regex, options: .dotMatchesLineSeparators)
   }
   
   func addAttributes(_ attributedString: NSMutableAttributedString, range: NSRange) {
