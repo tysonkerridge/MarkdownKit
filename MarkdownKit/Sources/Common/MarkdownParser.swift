@@ -126,10 +126,9 @@ open class MarkdownParser {
   
   open func parse(_ markdown: NSAttributedString) -> NSAttributedString {
     let attributedString = NSMutableAttributedString(attributedString: markdown)
-    attributedString.addAttribute(.font, value: font,
-                                  range: NSRange(location: 0, length: attributedString.length))
-    attributedString.addAttribute(.foregroundColor, value: color,
-                                  range: NSRange(location: 0, length: attributedString.length))
+    let lengthRange = NSRange(location: 0, length: attributedString.length)
+    attributedString.addAttribute(.font, value: font, range: lengthRange)
+    attributedString.addAttribute(.foregroundColor, value: color, range: lengthRange)
     var elements: [MarkdownElement] = escapingElements
     elements.append(contentsOf: defaultElements)
     elements.append(contentsOf: customElements)
