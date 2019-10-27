@@ -36,7 +36,7 @@ open class MarkdownQuote: MarkdownLevelElement {
     var string = (0..<level).reduce("") { (string: String, _: Int) -> String in
       return "\(string)\(separator)"
     }
-    string = "\(string)\(indicator) "
+    string = "\(string)"
     attributedString.replaceCharacters(in: range, with: string)
   }
 }
