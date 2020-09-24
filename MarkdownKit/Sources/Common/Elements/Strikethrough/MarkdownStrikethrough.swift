@@ -12,7 +12,10 @@ open class MarkdownStrikethrough: MarkdownCommonElement {
   
   open var font: MarkdownFont?
   open var color: MarkdownColor?
-  public var attributes: [NSAttributedString.Key : AnyObject] = [ .strikethroughStyle: NSNumber.init(value: NSUnderlineStyle.single.rawValue) ]
+  public var attributes: [NSAttributedString.Key : AnyObject] = [
+    .strikethroughStyle: NSNumber.init(value: NSUnderlineStyle.single.rawValue),
+    .baselineOffset : NSNumber(value: 0.0), // Required for iOS 14?
+  ]
   
   open var regex: String {
     return MarkdownStrikethrough.regex
