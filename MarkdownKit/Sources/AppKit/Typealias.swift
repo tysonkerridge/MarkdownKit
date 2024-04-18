@@ -6,8 +6,10 @@
 //  Copyright © 2019 Ivan Bruel. All rights reserved.
 //
 
+#if os(macOS)
 import AppKit
 
 public typealias MarkdownFont = NSFont
 public typealias MarkdownColor = NSColor
+#endif
 
