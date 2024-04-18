@@ -6,6 +6,7 @@
 //  Copyright © 2019 Ivan Bruel. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
 public typealias MarkdownFont = UIFont
@@ -14,3 +15,4 @@ public typealias MarkdownColor = UIColor
 public extension MarkdownFont {
   
 }
+#endif
