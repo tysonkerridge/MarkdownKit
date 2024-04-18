@@ -6,6 +6,8 @@
 //
 //
 import Foundation
+import UIKit
+
 
 /// MarkdownLevelElement serves the purpose of handling Elements which may have more than one 
 /// representation (e.g. Headers or Lists)

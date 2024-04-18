@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
 
 // Mapping from XML/HTML character entity reference to character
 // From http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references

@@ -6,6 +6,8 @@
 //
 //
 import Foundation
+import UIKit
+
 
 open class MarkdownAutomaticLink: MarkdownLink {
   

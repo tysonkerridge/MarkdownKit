@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
 import MarkdownKit
 
 class MarkdownSubreddit: MarkdownLink {

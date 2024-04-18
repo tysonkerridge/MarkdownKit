@@ -6,6 +6,8 @@
 //
 //
 import Foundation
+import UIKit
+
 
 /// The base to all Link parsing elements.
 public protocol MarkdownLinkElement: MarkdownElement, MarkdownStyle {

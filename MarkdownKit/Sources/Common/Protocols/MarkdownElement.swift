@@ -6,6 +6,8 @@
 //
 //
 import Foundation
+import UIKit
+
 
 /// The base protocol for all Markdown Elements, it handles parsing through regex.
 public protocol MarkdownElement: AnyObject {

@@ -6,6 +6,8 @@
 //
 //
 import Foundation
+import UIKit
+
 
 open class MarkdownBold: MarkdownCommonElement {
   fileprivate static let regex = "(.?|^)(\\*\\*|__)(?=\\S)(.+?)(?<=\\S)(\\2)"

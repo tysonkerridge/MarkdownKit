@@ -8,6 +8,8 @@
 /// MarkdownCommentElement represent the default Markdown elements which only manipulate content 
 /// visually, (e.g. Bold or Italic)
 import Foundation
+import UIKit
+
 
 public protocol MarkdownCommonElement: MarkdownElement, MarkdownStyle {
   

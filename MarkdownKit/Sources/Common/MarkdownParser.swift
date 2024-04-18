@@ -6,6 +6,8 @@
 //
 //
 import Foundation
+import UIKit
+
 
 open class MarkdownParser {
   public struct EnabledElements: OptionSet {

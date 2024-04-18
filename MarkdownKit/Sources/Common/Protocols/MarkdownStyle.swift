@@ -6,6 +6,8 @@
 //
 //
 import Foundation
+import UIKit
+
 
 /// Styling protocol for all MarkdownElements
 public protocol MarkdownStyle {
